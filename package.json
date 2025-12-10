@@ -23,7 +23,8 @@
     "productName": "MyTask",
     "win": {
       "target": "portable",
-      "icon": "assets/icon.ico"
+      "icon": "assets/icon.ico",
+      "sign": false
     },
     "files": [
       "**/*",
@@ -32,6 +33,9 @@
     ],
     "directories": {
       "output": "dist"
+    },
+    "extraMetadata": {
+      "main": "main.js"
     }
   }
 }

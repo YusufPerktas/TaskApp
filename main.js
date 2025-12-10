@@ -2,7 +2,12 @@ const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const Store = require('electron-store');
 
-const store = new Store();
+// Verileri uygulamanın bulunduğu klasörde sakla (portable mod)
+const store = new Store({
+  cwd: app.getPath('exe').includes('electron') 
+    ? path.join(__dirname) 
+    : path.dirname(app.getPath('exe'))
+});
 
 let mainWindow;
 

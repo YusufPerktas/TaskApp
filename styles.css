@@ -38,7 +38,7 @@ header h1 {
 }
 
 /* Buttons */
-.btn-primary, .btn-secondary, .btn-success {
+.btn-primary, .btn-secondary, .btn-success, .btn-danger {
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
@@ -85,6 +85,7 @@ header h1 {
 .btn-danger:hover {
     background: #dc2626;
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(239, 68, 68, 0.4);
 }
 
 /* Tabs */
